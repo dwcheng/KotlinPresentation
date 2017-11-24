@@ -12,7 +12,7 @@ reveal.js comes with a broad range of features including [nested slides](https:/
   - [Element Attributes](#element-attributes)
   - [Slide Attributes](#slide-attributes)
 - [Configuration](#configuration)
-- [Presentation Size](#presentation-size)
+- [Presentation size](#presentation-size)
 - [Dependencies](#dependencies)
 - [Ready Event](#ready-event)
 - [Auto-sliding](#auto-sliding)
@@ -310,7 +310,7 @@ Reveal.configure({ autoSlide: 5000 });
 ```
 
 
-### Presentation Size
+### Presentation size
 
 All presentations have a normal size, that is the resolution at which they are authored. The framework will automatically scale presentations uniformly based on this size to ensure that everything fits on any given display or viewport.
 

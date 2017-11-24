@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/code/code.iml" filepath="$PROJECT_DIR$/code/code.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kotlin.iml" filepath="$PROJECT_DIR$/kotlin.iml" />
       <module fileurl="file://$PROJECT_DIR$/slides/slides.iml" filepath="$PROJECT_DIR$/slides/slides.iml" />
     </modules>
   </component>

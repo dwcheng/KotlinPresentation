@@ -26,6 +26,24 @@
     <div class="slides">
         <section>
             <h1>Kotlin</h1>
+            <aside class="notes">
+                Hey everyone, My name is Daniel and today I'll be giving a short presentation on Kotlin
+            </aside>
+        </section>
+
+        <section>
+            <h2>What is Kotlin?</h2>
+            <ul>
+                <li class="fragment">Statically typed JVM language</li>
+                <li class="fragment">Java like syntax</li>
+                <li class="fragment">Addresses many common complaints about Java</li>
+            </ul>
+            <aside class="notes">
+                First off, what is Kotlin?
+                Kotlin is a statically typed, JVM language which was designed to be like Java, but address many of the
+                common complaints people have about it
+                Hopefully by the end of this presentation I'll have convinced you to use Kotlin in your next project
+            </aside>
         </section>
 
         <section>
@@ -35,33 +53,150 @@
                 <li class="fragment">
                     Modern Language Features
                     <ul>
-                        <li class="fragment">Concise Syntax</li>
                         <li class="fragment">Null Safety</li>
+                        <li class="fragment">Concise Syntax</li>
                     </ul>
                 </li>
             </ul>
 
             <aside class="notes">
-                <ul>
-                    <li>Interop eliminates big pain point, rewriting whole sections</li>
-                    <li>Allows incremental rewrites, meaning you can migrate one file at a time</li>
-                </ul>
+                <p>First is low barrier to entry. I'll go into more detail later, but basically Kotlin allows you to
+                    reuse existing Java code
+                    and libraries</p>
 
-                <ul>
-                    <li>When I say concise, I mean very concise</li>
-                    <li>One of the big complaints against Java is that it is wordy</li>
-                    <li>Kotlin borrows heavily from other languages and is like a melting pot</li>
-                </ul>
+                <p>Kotlin provides developers with many shiny tools to get the job done </p>
 
-                <ul>
-                    <li>Biggest advantage is that NPEs are now a compile time error</li>
-                    <li>If your code could throw a NPE, it MUST be dealt with</li>
-                </ul>
+                <p>I consider this to be one of Kotlin's best features. Basically if you're writing idiomatic Kotlin,
+                    you will never run into a NPE</p>
+
+                <p>Lastly I'll talk about some language features that make reading and writing Kotlin nice</p>
             </aside>
         </section>
 
         <section>
+            <h2>Interop</h2>
+            <p class="fragment">Using Kotlin means you can keep using existing libraries and code</p>
+            <aside class="notes">
+                <p>One of the big pain points when starting with a new language is rewriting code</p>
+                <p>This also means that you can do an incremental rewrite of your codebase rather than starting from
+                    scratch</p>
+            </aside>
         </section>
+
+        <section>
+            <h2>Null Safety</h2>
+            <p class="fragment">In Kotlin, null-pointers are handled at compile time rather than runtime</p>
+            <p class="fragment">If the compiler detects a possible NPE, it will not compile</p>
+        </section>
+
+        <section>
+            <h2>Null Safety</h2>
+            <p>Let's say you need to access a deeply nested variable</p>
+            <p class="fragment">Person -> Address -> Country -> Name</p>
+        </section>
+
+        <section>
+            <h2>Misc Features</h2>
+        </section>
+
+        <section>
+            <h2>Ranges</h2>
+        </section>
+
+        <section>
+            <h2>
+                <pre><code class="java" data-trim>
+                for(i in 1..5) {
+                    print(i)
+                }
+            </code></pre>
+                <p class="fragment">12345</p>
+            </h2>
+        </section>
+
+        <section>
+            <h2>
+                <pre><code class="java" data-trim>
+                    for(i in 1..5 step 2) {
+                        print(i)
+                    }
+                </code></pre>
+                <p class="fragment">135</p>
+            </h2>
+        </section>
+
+        <section>
+            <h2>
+                <pre><code class="java" data-trim>
+fun cannotDrink(age: Int) : Boolean {
+    return age in 0..19
+}
+                </code></pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>Extension Methods</h2>
+        </section>
+
+        <section>
+            <h2>
+                <pre><code class="java" data-trim>
+fun String.lastCharacter(): Char {
+    return this.get(this.length - 1)
+}
+                </code></pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>
+                <pre><code class="java" data-trim>
+print("DOG".lastCharacter())
+                </code></pre>
+                <p class="fragment">g</p>
+            </h2>
+        </section>
+
+        <section>
+            <h2>
+                Infix Functions
+            </h2>
+        </section>
+
+        <section>
+            <h2>
+                <pre><code class="java" data-trim data-noescape style="font-size: 26px;">
+infix fun Double.applyTax(rate: Double) = this * rate
+<div class="fragment">val fullPrice = 4.99 applyTax 1.13</div>
+                </code></pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>
+                <pre><code class="java" data-trim data-noescape style="font-size: 26px;">
+val dotProduct = vecA dot vecB
+val crossProduct = vecA cross vecB
+                </code></pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>Repeat</h2>
+        </section>
+
+        <section>
+            <h2>
+                <pre><code class="java" data-trim style="font-size: 26px;">
+                    repeat(3) {
+                        print("Hi")
+                    }
+                </code></pre>
+                <p class="fragment">HiHiHi</p>
+            </h2>
+        </section>
+
     </div>
 </div>
 
