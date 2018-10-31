@@ -2,10 +2,7 @@
 Short presentation for dev family lunch
 
 # How to run
-Navigate to the slides directory
-
-Run npm install
-
-Run npm start
-
-You can now access the presentation at http://localhost:8000
+1. Navigate to the `slides` directory
+2. Run `npm install`
+3. Run `npm start`
+4. You can now access the presentation at `http://localhost:8000`
